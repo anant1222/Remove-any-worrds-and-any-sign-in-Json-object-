@@ -1,0 +1,23 @@
+let data = {
+"name": {
+"first": "Robert",
+"middle": "",
+"last": "Smith"
+},
+"age": 25,
+"DOB": "-",
+"hobbies": [
+"running",
+"coding",
+"-"
+],
+"education": {
+"highschool": "N/A",
+"college": "Yale"
+}
+}
+
+const myJSON = JSON.stringify(data);
+var ret = myJSON.replace("N/A",'');
+console.log(ret);
+
